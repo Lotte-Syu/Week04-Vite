@@ -1,12 +1,5 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-// Box-Model
-
-// Base
-
-// Layout
-
-// 導覽列
 
 // 橫幅 
 .banner{
@@ -257,7 +250,7 @@
                 width:100%
             }
             box-shadow: 0px 2px 6px #00000029;
-        /* 陰影: 水平陰影的偏移量 垂直陰影的偏移量 陰影模糊的半徑 陰影的顏色 */  
+        // 陰影: 水平陰影的偏移量 垂直陰影的偏移量 陰影模糊的半徑 陰影的顏色 
             border: 1px solid #DEE2E6;
             border-radius: 4px;
             opacity: 1; 
@@ -273,7 +266,7 @@
             &-date{
                 font-size: 14px;
                 color: #707070;
-                 margin-top: auto; /*讓日期永遠在卡片最下方 */
+                margin-top: auto; //讓日期永遠在卡片最下方 
             }
         }
     }
@@ -290,7 +283,7 @@
     }
 }
 
-/* 聯絡我們 */
+// 聯絡我們 
 .contact{
     background-color: #fbf2f2;
     max-width: 100%;
@@ -313,7 +306,7 @@
         }
     }
     &-box{
-        max-width: 100%; /*636px;  */
+        max-width: 100%; 
         color: black;
         display: flex;
         flex-direction: column;
@@ -349,7 +342,7 @@
 
     }
 }
-/* 聯絡我們容器 */
+// 聯絡我們容器
 .contact-container{
     max-width: 1320px; 
     margin: 0 auto;
@@ -366,6 +359,3 @@
 
 
 
-/* 表尾 */
-
-/* Utils-在多個地方重複使用的編碼 */
