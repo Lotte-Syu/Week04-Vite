@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡官網首頁</title>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <%- include('./layout/header'); -%>
+
+   <!-- 橫幅 -->
+   <section class="banner">
+      <div class="banner-container banner-content ">
+          <div class=" banner-box">
+              <h3 class="h3">Promise-Desert 2020 早春系列</h3>
+              <h1 class="h1" style="font-weight: bold;">看得清，才能看得遠</h1>
+              <div>
+                  <a href="#" class="banner-button">立即購買</a>
+              </div>
+          </div>
+      </div>
+   </section>
+   <!-- 服務說明卡片 -->
+    <section class="column">
+       <div class="column-container">
+          <h2 class="column-title">用專業的心，做專業的事</h2>
+          <div class="column-box"> 
+              <!-- column 1 -->
+              <div class="card">
+                  <div class="text-align-c"> <!-- 只有圖片跟下標題要置中，所以給一個容器包住他們，文字內容就會靠右 -->
+                      <img src="/assets/images/home-section2-1.png" alt="coin icon"> 
+                      <p class="f-1">單一價格</p>
+                  </div>
+                  <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+              </div>
+              <!-- column 2 -->
+              <div class="card">
+                  <div class="text-align-c">
+                      <img src="/assets/images/home-section2-2.png" alt="clock icon"> 
+                      <p class="f-1">20 分鐘即可取件</p>
+                  </div>
+                  <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p> 
+              </div>
+              <!-- column 3 -->
+              <div class="card">
+                  <div class="text-align-c">
+                      <img src="/assets/images/home-section2-3.png" alt="heart icon"> 
+                      <p class="f-1">安心售後服務</p>
+                  </div>
+                  <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+              </div>
+              <!-- column 4 -->
+              <div class="card">
+                  <div class="text-align-c">
+                      <img src="/assets/images/home-sectioin2-4.png" alt="glass icon"> 
+                      <p class="f-1">關於鏡片</p>
+                  </div>   
+                  <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+              </div>
+          </div>
+      </div>
+   </section>
+   <!-- 經典系列 -->
+   <section class="classic">
+      <div class="classic-container">
+          <h2 class=" h2 classic-title">經典系列鏡框</h2>
+          <div class="classic-box">
+              <div class="card">
+                  <img src="/assets/images/home-section3-1.png" alt="young lady">
+                  <h2 class="h2 text-align-c ita">OPTICAL</h2>
+              </div>
+              <div class="card">
+                  <img src="/assets/images/home-section3-2.png" alt="young lady">
+                  <h2 class="h2 text-align-c ita">SUNGLASSES</h2>
+              </div>
+              <div class="card">
+                  <img src="/assets/images/home-section3-3.png" alt="old man">
+                  <h2 class="h2 text-align-c ita">FUNCTIONAL</h2>
+               </div>
+          </div>
+      </div>
+   </section> 
+   <!-- 聯名系列 -->
+   <section class="cobrand">
+      <div class="cobrand-container">
+          <h2 class="h2 cobrand-title">聯名設計鏡框</h2>
+          <div class="cobrand-box">
+              <div class="card">
+                  <img src="/assets/images/home-section4-1.png" alt="double A+ picture" class="double">
+                  <h2 class="h2 text-align-c ita">DOUBLE A+</h2>
+              </div>
+              <div class="card">
+                  <img src="/assets/images/home-section4-2.png" alt="youth picture" class="youth">
+                  <h2 class="h2 text-align-c ita">YOUTH</h2>
+              </div> 
+          </div>
+      </div>
+   </section> 
+   <!-- 顧客推薦 -->
+   <section class="recommend">
+      <div class="recommend-container">
+          <h2 class="recommend-title">顧客推薦</h2>
+          <ul class="recommend-box">
+              <!-- 顧客A -->
+              <li class="card">
+                  <img src="/assets/images/home-section5-1.png" alt="顧客A個人照">
+                  <p class="card-content">
+                      Jessy <br/>
+                      眼鏡品質優良，下次還會想來這邊購買！
+                  </p>
+                  <p class="card-date">2021/06/20</p>  
+              </li>
+              <!-- 顧客B -->
+              <li class="card">
+                  <img src="/assets/images/home-section5-2.png" alt="顧客B個人照">
+                  <p class="card-content">
+                      凱倫<br/> 
+                      做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                  </p>
+                  <p class="card-date">2021/04/18</p>
+              </li>
+              <!-- 顧客C -->
+              <li class="card">
+                  <img src="/assets/images/home-section5-3.png" alt="顧客C個人照">
+                  <p class="card-content">
+                      悠悠<br/>
+                      謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                  </p>
+                  <p class="card-date">2020/12/25</p>
+              </li>
+              <!-- 顧客D -->
+              <li class="card">
+                  <img src="/assets/images/home-section5-4.png" alt="顧客D個人照">
+                  <p class="card-content">
+                      Kyuan<br/>
+                      服務很好，品質沒有任何問題，非常喜歡。
+                  </p>
+                  <p class="card-date">2020/10/31</p>
+              </li>
+          </ul>
+      </div>
+   </section> 
+   <!-- 聯絡我們 -->
+    <section class="contact">
+      <div class="contact-container contact-form">
+          <h2 class="title">聯絡我們</h2>
+          <div class="contact-box">
+              <p class="des">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+              <ul class="contact-form-list">
+                  <li class="card" >
+                      <label for="name" >姓名</label>
+                      <input type="text" id="name" name="name" placeholder="王小明">
+                  </li>
+                  <li class="card">
+                      <label for="contact-phone">連絡電話</label>
+                      <input type="tel" id="contact-phone" name="contact-phone" placeholder="0912-345-678">
+                  </li>
+                  <li class="card">
+                      <label for="email">電子郵件</label>
+                      <input type="email" id="email" name="email" placeholder="example@email.com">
+                  </li>
+                  <li class="card">
+                      <label for="suggestion">意見反應</label>
+                      <textarea id="suggestion" name="suggestion" placeholder="請輸入您的意見" style="height: 136px;"></textarea>
+                  </li>
+                  <li >
+                      <input type="checkbox" name="agree-privacy" id="agree-privacy">
+                      <label for="agree-privacy">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                  </li>
+              </ul>
+              <button type="submit" >確認送出</button>
+          </div>
+      </div>
+    </section> 
+
+    <!-- 表尾 -->
+    <%- include('./layout/footer'); -%>
+
+    <!-- 這行不要動它 (Vite dev模式的核心) -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

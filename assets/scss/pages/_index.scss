@@ -1,0 +1,371 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+// Box-Model
+
+// Base
+
+// Layout
+
+// 導覽列
+
+// 橫幅 
+.banner{
+    background-image: url(/assets/images/home-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 787px;
+    width: 100%;  // 確保背景的寬度會等於父容器寬度(在這裡就是頁面寬度)這樣頁面寬度縮小成平版或是手機的時候可以確保背景都是滿版
+    &-box{
+        text-align: right;
+    }
+    &-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &-button{
+        color: #fff;
+        padding: 6px 12px;
+        background-color: #aa0601;
+    }
+    @include mobile{
+        background-image: url(/assets/images/home-header-sm.png);
+        height: 396px;
+    }
+    &-container{
+        max-width: 1320px; // 1296+24=1320，盒模型下為了讓container寬1296px，加回左右推的12px 
+        margin: 0 auto;
+        padding-right: 12px; // 在手機或平板頁面時，為了不要讓內容黏死在畫面邊邊，所以左右各推12px 
+        padding-left: 12px;
+        @include table{
+            max-width: 968px; 
+    
+        }
+        @include mobile{
+            max-width: 552px;
+            .h3{
+                font-size: 16px;
+            }
+            .h1{
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// 服務說明欄 
+.column{
+    background-color: #FBF2F2;
+    padding: 80px 0;
+    width: 100%;
+    @include mobile{
+        padding: 40px 0;
+    }
+    &-title{
+        text-align: center;
+        margin-bottom: 34px;
+        font-size: 48px;
+        font-weight: bold;
+        @include mobile-lg{
+            font-size: 24px;
+        }
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        @include mobile-lg{
+            flex-wrap: wrap;
+        }
+        @include mobile{
+            font-size: 24px;
+        }
+        .card{
+            width: calc(25% - 18px); // 減號前後要記得加空白 
+            @include mobile-lg{
+                width: calc(50% - 12px)
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        img{
+        width: 84px;
+        height: 84px;
+        margin-bottom: 24px;
+        }
+    }
+    &-container{
+        max-width: 1320px; 
+        margin: 0 auto;
+        padding: 0 12px;
+        @include mobile-lg{
+            max-width: 744px;
+        }
+        @include mobile{
+            max-width: 552px;
+        }
+    }
+}
+
+/* 經典系列 */
+.classic{
+    background-color: #fff;
+    padding: 80px 0;
+    width: 100%;
+    &-title{
+        text-align: center;
+        padding-bottom: 48px;
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+        gap: 24px;
+        @include mobile-lg{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .card{
+            @include mobile-lg{
+                    max-width: 336px;
+                }
+            }
+    }
+    &-container{
+        max-width: 1320px; 
+        margin: 0 auto;
+        padding: 0 12px;
+        @include mobile-lg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 744px;
+        }
+        @include mobile{
+            max-width: 552px;
+        }
+    }
+}
+
+
+/* 聯名系列 */
+.cobrand{
+    background-image: url(/assets/images/index-bg.png);
+    @include mobile-lg{
+        background-image: url(/assets/images/index-bg-md.png);
+    }
+    @include mobile{
+        background-image: url(/assets/images/index-bg-sm.png);
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* 確保背景大小會跟父容器(螢幕視窗)一致 */
+    padding: 80px 0;
+    @include mobile-lg{
+        padding: 40px 0;
+    }
+    &-title{
+        color: #fff;
+        text-align: center;
+        padding-bottom: 48px;
+        @include mobile{
+            font-size: 24px;
+            padding-bottom: 24px;
+        }
+    }
+    &-box{
+        display: flex;
+        @include mobile-lg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .card{
+            background-color: #fff;
+            max-width: 50%;
+            @include mobile-lg{
+                max-width: 100%;
+            }
+            .double{
+                @include mobile{ 
+                background-image: url(/img-Week3/home-section4-1-sm.png);
+                background-size: cover;
+                }
+            }
+            .youth{
+                @include mobile{ 
+                background-image: url(/img-Week3/home-section4-2-sm.png);
+                background-size: cover;
+                }
+            }
+        }
+    }
+    &-container{
+        max-width: 1320px; 
+        margin: 0 auto;
+        padding: 0 12px;
+        @include mobile-lg{
+            max-width: 744px;
+        }
+        @include mobile{
+            max-width: 552px;
+        }
+    }
+}
+
+/* 顧客推薦 */
+.recommend{
+    background-color: #fff;
+    padding: 80px 0;
+    @include mobile{
+        padding: 40px 0;
+    }
+    &-title{
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 48px;
+        @include mobile{
+            padding-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        @include mobile-lg{
+            flex-wrap: wrap;
+        }
+        .card{
+            width: calc(25% - 13px);
+            @include mobile-lg{
+                width:calc(50% - 12px)
+            }
+            @include mobile{
+                width:100%
+            }
+            box-shadow: 0px 2px 6px #00000029;
+        /* 陰影: 水平陰影的偏移量 垂直陰影的偏移量 陰影模糊的半徑 陰影的顏色 */  
+            border: 1px solid #DEE2E6;
+            border-radius: 4px;
+            opacity: 1; 
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 16px;
+            
+            &-content{
+                color: black;
+                padding-top: 16px;
+                margin-bottom: 72px;
+            }
+            &-date{
+                font-size: 14px;
+                color: #707070;
+                 margin-top: auto; /*讓日期永遠在卡片最下方 */
+            }
+        }
+    }
+    &-container{
+        max-width: 1320px; 
+        margin: 0 auto;
+        padding: 0 12px;
+        @include mobile-lg{
+            max-width:744px;
+        }
+        @include mobile{
+            max-width: 552px;
+        }
+    }
+}
+
+/* 聯絡我們 */
+.contact{
+    background-color: #fbf2f2;
+    max-width: 100%;
+    padding: 80px 0;
+    @include mobile{
+        padding: 40px 0;
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            text-align: center;
+            padding-bottom: 48px;
+            font-size: 48px;
+            font-weight: bold;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+    }
+    &-box{
+        max-width: 100%; /*636px;  */
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mobile-lg{
+            max-width: 100%;
+        }
+        .des{
+            color: black;
+            font-size: 20px;
+            padding-bottom: 24px;
+        }
+        button {
+            max-width: 416px;
+            background-color: #aa0601;
+            width:100%;
+            padding: 16px 0;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+        }
+        button:active{
+            background-color: #650300;
+        }  
+    }
+    &-form-list{
+        padding-bottom: 48px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 16px;
+        }
+
+    }
+}
+/* 聯絡我們容器 */
+.contact-container{
+    max-width: 1320px; 
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include mobile-lg{
+        max-width: 744px;
+    }
+    @include mobile{
+        max-width: 552px;
+    }
+}
+
+
+
+
+/* 表尾 */
+
+/* Utils-在多個地方重複使用的編碼 */

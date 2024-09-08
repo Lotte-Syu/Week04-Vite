@@ -1,0 +1,66 @@
+.header{
+    color: #fff;
+    background-color: #aa0601;
+    padding: 12px 0;
+    @include mobile-lg{
+            padding: 0;
+            width:100%;
+        }
+}        
+
+.nav{
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile-lg{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+}
+    &-items{
+        width: 492px;
+        font-size: 20px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile-lg{
+            width: 100%; // 容器會跟著螢幕寬度調整
+            flex-wrap: wrap;
+        }
+        a{
+            // margin-left: 64px;// padding: 8px 8px;
+            @include mobile-lg{
+                width: 50%;
+                border: #fff solid 1px;
+                text-align: center;
+                padding: 12px 0;
+            }
+        }
+    }
+}
+
+.logo-box{
+    width: 80px;
+    height: 48px;
+    margin: 12px 0;
+    @include mobile-lg{
+        margin: 12px 15px;
+    }
+}
+
+// 導覽列-容器RWD 
+.container-nav{
+    max-width: 1320px; 
+    margin: 0 auto;
+    padding: 0 12px;
+    @include table{
+         max-width: 1016px; //696px;
+    }
+    @include mobile-lg{
+        max-width: 792px; 
+        padding: 0;
+    }
+}
