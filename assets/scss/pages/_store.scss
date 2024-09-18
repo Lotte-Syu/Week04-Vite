@@ -32,12 +32,16 @@
         margin-bottom: 40px;
     }
     &-box{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 48px 24px;
-        margin-right: -12px;// 在電腦版的時候可以用負值讓最右邊卡片貼齊外容器，但做到平板或是手機版的時候圖片會超過外容器
+        gap: 48px 30px; // 原本是依照設計線稿下 gap： 48px 24p，但這樣最右邊的卡片離外容器有12px的距離
+        // margin-right: -12px; 在電腦版的時候可以用負值讓最右邊卡片貼齊外容器，但做到平板或是手機版的時候圖片會超過外容器
         font-size: 20px;
         color: black;
+        @include table{
+            gap: 48px 24px
+        }
         .card{
             display: flex;
             flex-direction: column;
